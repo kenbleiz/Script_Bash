@@ -55,7 +55,7 @@ fonction_serveur_distant_ssh(){
         check_return_code_ssh
 
         SSH_PHASE="suppression des fichiers"
-        find ${REPERTOIRE} -type f -mtime ${NB_JOURS} -delete
+        find ${REPERTOIRE} -type f -mtime ${NB_JOURS} -maxdepth 1 -delete
         (( SSH_RETCOD = \$SSH_RETCOD + \$? ))
         check_return_code_ssh
 
