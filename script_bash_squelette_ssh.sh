@@ -51,8 +51,8 @@ fonction_serveur_distant_ssh(){
 
 
 
-        SSH_PHASE="cd /P1/env/PROD"
-        cd /P1/env/PROD
+        SSH_PHASE="actions "
+        #Actions
         (( SSH_RETCOD = \$SSH_RETCOD + \$? ))
         check_return_code_ssh
 
