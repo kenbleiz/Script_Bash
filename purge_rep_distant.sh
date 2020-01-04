@@ -26,7 +26,7 @@ fonction_serveur_distant_ssh(){
 
     PHASE=" fonction_serveur_distant_ssh $MACHINE  "
 
-    ssh $MACHINE -l root <<!eof1
+    ssh $MACHINE -l ${USER} -p${PORT} <<!eof1
 
         #---------------------------------------------------------
         # Fonction de test des codes retour SSH
