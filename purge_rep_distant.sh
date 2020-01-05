@@ -80,7 +80,7 @@ NB_JOURS=$5
 
  PHASE="test si le nombre de parametre est OK"
  if [[ $# != 5 ]] ; then
-   echo 'nombre de parametres invalides
+   echo 'nombre de parametres invalide'
    echo 'liste des parametres : machine_distant / user_serveur / port_ssh / repertoire /  nombre_de_jours_a_concerver'
    echo 'exemple : ./purge_rep_distant.sh machine.distant root 22 /home/test/ 7'
    exit 100
