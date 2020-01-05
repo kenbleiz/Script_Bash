@@ -2,7 +2,7 @@
 # --------------------------------------------------------------------------
 # DATE :    04/01/2020
 # AUT :     SJL
-# DES :     Purge recurcive d'un repertoire sur une machine distante
+# DES :     Purge non recurcive d'un repertoire sur une machine distante
 # MAJ :     N/A
 # --------------------------------------------------------------------------
 
