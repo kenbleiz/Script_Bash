@@ -55,7 +55,7 @@ fonction_serveur_distant_ssh(){
         check_return_code_ssh
 
         SSH_PHASE="suppression des fichiers"
-        find ${REPERTOIRE} -type f -mtime ${NB_JOURS} -maxdepth 1 -delete
+        find ${REPERTOIRE} -maxdepth 1 -type f -mtime ${NB_JOURS} -delete
         (( SSH_RETCOD = \$SSH_RETCOD + \$? ))
         check_return_code_ssh
 
@@ -76,7 +76,7 @@ USER=$2
 PORT=$3
 REPERTOIRE=$4
 #Nombre de jours a concerver
-NB_JOURS=$5
+NB_JOURS="+$5"
 
  PHASE="test si le nombre de parametre est OK"
  if [[ $# != 5 ]] ; then
