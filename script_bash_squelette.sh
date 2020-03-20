@@ -34,7 +34,7 @@ check_return_code
 #    exit 100
 # fi
 
-PhASE="cd /"
+PHASE="cd /"
 cd /
 (( RETCOD = $RETCOD + $? ))
 check_return_code
