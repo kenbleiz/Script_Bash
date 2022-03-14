@@ -13,7 +13,7 @@ check_return_code_local(){
     echo " ----------------------------------- "
     echo " PHASE :  $PHASE   RETCOD =  $RETCOD "
     echo " ----------------------------------- "
-    if (( $RETCOD != 0 )); then
+    if (( RETCOD != 0 )); then
         exit $RETCOD
     fi
 }
@@ -27,7 +27,7 @@ REPERTOIRE=$1
 NB_JOURS="+$2"
 
 PHASE="INIT CODE RETOUR à ZERO  "
-(( RETCOD = 0 ))
+RETCOD=0
 check_return_code_local
 
 PHASE="test si le nombre de parametre est OK"
@@ -37,6 +37,6 @@ if [[ $# != 2 ]] ; then
 fi
 
 PHASE="suppression des fichiers"
-find ${REPERTOIRE} -maxdepth 1 -type f -mtime ${NB_JOURS} -delete
-(( RETCOD = RETCOD + $? ))
+find "${REPERTOIRE}" -maxdepth 1 -type f -mtime "${NB_JOURS}" -delete
+RETCOD=$(( RETCOD + $? ))
 check_return_code_local
