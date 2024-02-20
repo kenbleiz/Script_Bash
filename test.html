@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Présentation Temboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/black.css" id="theme">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1 -->
+            <section>
+                <section>
+                    <h1>Présentation Temboard</h1>
+                    <p>Bienvenue !</p>
+                </section>
+                <section data-background-image="adv.png" data-background-opacity="0.2">
+                    <h2>Who am I</h2>
+                    <ul>
+                        <li class="fragment fade-in-then-semi-out">Sébastien
+                            Jézéquel</li>
+                        <li class="fragment fade-in-then-semi-out">PostgreSQL
+                            DBA </li>
+                        <li class="fragment fade-in-then-semi-out">blabla
+                            blublu</li>
+                        <aside class="notes">
+                            Shhh, these are your private notes 📝
+                        </aside>
+                </section>
+                <section>
+                    <pre><code data-trim data-noescape>
+(def lazy-fib
+  (concat
+   [0 1]
+   ((fn rfib [a b]
+        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+					</code></pre>
+                </section>
+            </section>
+
+            <!-- Slide 2 -->
+            <section>
+                <h2>Introduction à Temboard</h2>
+                <p>Temboard est une interface web légère pour la gestion et la surveillance des bases de données
+                    PostgreSQL.</p>
+            </section>
+            <section>
+                <h2>Interface Temboard</h2>
+                <img src="2024-02-20 14_07_17-.png" alt="Capture d'écran Temboard">
+            </section>
+            <!-- Slide 3 -->
+            <section>
+                <h2>Fonctionnalités</h2>
+                <ul>
+                    <li class="fragment fade-in-then-semi-out">Surveillance en temps réel des performances</li>
+                    <li class="fragment fade-in-then-semi-out">Gestion des utilisateurs et des bases de données</li>
+                    <li class="fragment fade-in-then-semi-out">Exécution de requêtes SQL</li>
+                    <li class="fragment fade-in-then-semi-out">...</li>
+                </ul>
+            </section>
+
+            <!-- Slide 4 -->
+            <section>
+                <h2>Interface utilisateur conviviale</h2>
+                <p>Une interface intuitive pour faciliter la gestion quotidienne des bases de données PostgreSQL.</p>
+            </section>
+
+            <!-- Slide 5 -->
+            <section>
+                <h2>Installation</h2>
+                <p>Guide d'installation de Temboard sur un serveur PostgreSQL.</p>
+            </section>
+
+            <!-- Slide 6 -->
+            <section>
+                <h2>Utilisation avancée</h2>
+                <p>Exploration des fonctionnalités avancées de Temboard pour une gestion plus approfondie.</p>
+            </section>
+
+            <!-- Slide 7 -->
+            <section>
+                <h2>Intégration avec Patroni</h2>
+                <p>Temboard peut être intégré avec Patroni pour une gestion complète de l'infrastructure PostgreSQL.</p>
+            </section>
+
+            <!-- Slide 8 -->
+            <section>
+                <h2>Ressources supplémentaires</h2>
+                <p>Liens vers la documentation officielle, forums de support et communauté.</p>
+            </section>
+
+            <!-- Ajoutez d'autres slides en fonction de vos besoins -->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide',
+            slideNumber: 'c',
+        });
+    </script>
+</body>
+
+</html>
